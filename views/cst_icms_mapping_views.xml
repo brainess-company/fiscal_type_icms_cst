@@ -10,7 +10,7 @@
     <!-- Menu para acessar o mapeamento no módulo de Configuração Fiscal -->
     <menuitem id="menu_cst_icms_mapping_root"
               name="Configuração CST ICMS"
-              parent="l10n_br_fiscal.menu_l10n_br_fiscal_config"
+              parent="l10n_br_fiscal.configuration_menu"
               action="action_cst_icms_mapping"/>
 
     <!-- Visão em Lista (Tree) -->
