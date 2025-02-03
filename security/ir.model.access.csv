@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
-access_cst_icms_mapping_user,l10n_br_fiscal.cst_icms_mapping,model_l10n_br_fiscal_cst_icms_mapping,l10n_br_fiscal.group_user,1,1,1,1
+access_cst_icms_mapping_user,l10n_br_fiscal.cst_icms_mapping,model_l10n_br_fiscal_cst_icms_mapping,,1,1,1,1
