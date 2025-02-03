@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Ação para abrir a tela de configuração do mapeamento -->
+    <record id="action_cst_icms_mapping" model="ir.actions.act_window">
+        <field name="name">Mapeamento CST ICMS</field>
+        <field name="res_model">l10n_br_fiscal.cst_icms_mapping</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu para acessar o mapeamento no módulo de Configuração Fiscal -->
+    <menuitem id="menu_cst_icms_mapping_root"
+              name="Configuração CST ICMS"
+              parent="l10n_br_fiscal.menu_l10n_br_fiscal_config"
+              action="action_cst_icms_mapping"/>
+
+    <!-- Visão em Lista (Tree) -->
+    <record id="view_cst_icms_mapping_tree" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.cst_icms_mapping.tree</field>
+        <field name="model">l10n_br_fiscal.cst_icms_mapping</field>
+        <field name="arch" type="xml">
+            <tree string="Mapeamento CST ICMS">
+                <field name="cst_icms_code"/>
+                <field name="fiscal_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Visão em Formulário -->
+    <record id="view_cst_icms_mapping_form" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.cst_icms_mapping.form</field>
+        <field name="model">l10n_br_fiscal.cst_icms_mapping</field>
+        <field name="arch" type="xml">
+            <form string="Mapeamento CST ICMS">
+                <sheet>
+                    <group>
+                        <field name="cst_icms_code"/>
+                        <field name="fiscal_type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
